@@ -1,0 +1,27 @@
+Step0: Download Python psoriasis analysis code
+    git clone git@github.com:gyasmeen-ml/AI-for-psoriasis.git
+    cd AI-for-psoriasis
+
+Step1: Install the required Python libraries:
+    conda create --name psoriasis
+    conda activate psoriasis
+    conda install python
+    pip install scikit-learn
+    pip install numpy
+    pip install scikit-image
+    pip install Pillow
+    pip install xlrd
+    pip install scikit-fuzzy
+    pip install matplotlib
+
+Step 2: Remove non-skin area
+    cd skin_detection
+    python skin_detection.py --im_path ../sample_images/img_arm.JPG --save_path ../sample_results/skin/
+
+Step 3: Remove nipples (from trunk image)
+    cd nipple_detection
+    python nipple_detection.py --im_path ../sample_images/img_trunk2.JPG --save_path ../sample_results/nipple/
+
+Step 4: Apply lesion segmentation
+    cd lesion_segmentation
+    python superpixel_segmentation.py --im_path ../sample_images/img_trunk2.jpg --mask_path "../sample_results/nipple/img_trunk2_no_nipples_stage2.jpeg" --save_path ../sample_results/lesion/
