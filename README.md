@@ -1,5 +1,15 @@
 # AI-for-psoriasis
 This work has been published in the following articles:
+@article{george2017automatic,
+  title={Automatic psoriasis lesion segmentation in two-dimensional skin images using multiscale superpixel clustering},
+  author={George, Yasmeen and Aldeen, Mohammad and Garnavi, Rahil},
+  journal={Journal of Medical Imaging},
+  volume={4},
+  number={4},
+  pages={044004--044004},
+  year={2017},
+  publisher={Society of Photo-Optical Instrumentation Engineers}
+}
 
 @inproceedings{george2019automatic,
   title={Automatic nipple detection method for digital skin images with psoriasis lesions},
@@ -9,7 +19,6 @@ This work has been published in the following articles:
   year={2019},
   organization={IEEE}
 }
-
 
 @inproceedings{george2017pixel,
   title={A pixel-based skin segmentation in psoriasis images using committee of machine learning classifiers},
